@@ -21,7 +21,13 @@ namespace Inheretans
         {
             return $"{LastName} {FirstName} {Age} лет.";
         }
-
+        public virtual void Print()
+        {
+            Console.WriteLine(this.GetType());
+            Console.WriteLine("Last name:\t " + LastName);
+            Console.WriteLine("First name:\t " + FirstName);
+            Console.WriteLine("Age:\t\t " + Age);
+        }
 
 
 

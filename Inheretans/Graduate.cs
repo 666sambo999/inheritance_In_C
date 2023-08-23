@@ -20,5 +20,12 @@ namespace Inheretans
         {
             return base.ToString() + " " + Subject;
         }
+        public sealed override void Print()
+        {
+            base.Print();
+            Console.WriteLine("Subject:\t"+ Subject);
+        }
+
+
     }
 }

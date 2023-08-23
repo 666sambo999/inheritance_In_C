@@ -26,6 +26,14 @@ namespace Inheretans
         {
             return base.ToString()+ $"{Speciality} {Group} {Rating} {Attendance}";
         }
+        public override void Print()
+        {
+            base.Print();
+            Console.WriteLine("Speciality:\t"+ Speciality);
+            Console.WriteLine("Group:\t\t"+ Group);
+            Console.WriteLine("Rating:\t\t" + Rating);
+            Console.WriteLine("Attendance:\t" + Attendance);
+        }
 
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AE367BD9-3C34-4C5E-B318-C563F9BD138E}</ProjectGuid>
+    <ProjectGuid>{9FFAF08C-66C1-4D68-BFF7-75EBEE660E6D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Inheretans</RootNamespace>
-    <AssemblyName>Inheretans</AssemblyName>
+    <RootNamespace>File</RootNamespace>
+    <AssemblyName>File</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Graduate.cs" />
-    <Compile Include="Human.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Specialist.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="Teacher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
