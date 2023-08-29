@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheretans", "Inheretans\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File", "File\File.csproj", "{9FFAF08C-66C1-4D68-BFF7-75EBEE660E6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractGeometry", "AbstractGeometry\AbstractGeometry.csproj", "{5759058F-8FDF-459E-9A8A-ED537342747C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9FFAF08C-66C1-4D68-BFF7-75EBEE660E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FFAF08C-66C1-4D68-BFF7-75EBEE660E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FFAF08C-66C1-4D68-BFF7-75EBEE660E6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5759058F-8FDF-459E-9A8A-ED537342747C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5759058F-8FDF-459E-9A8A-ED537342747C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5759058F-8FDF-459E-9A8A-ED537342747C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5759058F-8FDF-459E-9A8A-ED537342747C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

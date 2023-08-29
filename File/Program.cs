@@ -11,10 +11,19 @@ namespace File
     {
         static void Main(string[] args)
         {
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string filename = "File.txt";
+            Console.WriteLine(currentDirectory);
+            Console.WriteLine(Directory.GetCurrentDirectory());
             StreamWriter sw = new StreamWriter("File.txt");
             sw.WriteLine("Hello");
             sw.Close();
-
+            Console.WriteLine(currentDirectory);
+            Console.WriteLine(filename);
+            string cmd = currentDirectory + "\\" + filename;
+            Console.WriteLine(cmd);
+            System.Diagnostics.Process.Start("notepad",cmd);
+            
         }
     }
 }

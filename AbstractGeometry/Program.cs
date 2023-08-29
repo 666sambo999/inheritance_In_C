@@ -14,6 +14,7 @@ namespace AbstractGeometry
 {
     internal class Program
     {
+        static readonly string delimetr = "\n=====================================\n";
         static void Main(string[] args)
         {
             IntPtr hwnd = GetConsoleWindow();
@@ -25,12 +26,19 @@ namespace AbstractGeometry
            
             PaintEventArgs e = new PaintEventArgs(graphics,window_rect);
 
-            Regtangle regtangle = new Regtangle(50,40,600,600,3,Color.DarkRed);
-            Console.WriteLine($"Сторона 'A': {regtangle.SideA} ");
-            Console.WriteLine($"Сторона 'B': {regtangle.SideB} ");
-            Console.WriteLine($" Площадь треугольника: {regtangle.GetArea()}");
-            Console.WriteLine($" периметр треугольника: {regtangle.GetPerimetr()}");
-            regtangle.Draw(e);
+            Regtangle regtangle = new Regtangle(150,130,800,700,4,Color.DarkRed);
+            //Console.WriteLine($"Сторона 'A': {regtangle.SideA} ");
+            //Console.WriteLine($"Сторона 'B': {regtangle.SideB} ");
+            //Console.WriteLine($" Площадь треугольника: {regtangle.GetArea()}");
+            //Console.WriteLine($" периметр треугольника: {regtangle.GetPerimetr()}");
+            //regtangle.Draw(e);
+            regtangle.info(e);
+            Console.WriteLine(delimetr);
+            Square square = new Square(420, 500, 355, 3, Color.AntiqueWhite);
+            square.info(e);
+
+            Circle circle = new Circle(60, 300, 200, 3, Color.Chocolate);
+            circle.info(e);
 
         }
         [DllImport("kernel32.dll")]
