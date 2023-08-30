@@ -24,7 +24,8 @@ namespace Inheretans
         }
         public override string ToString()
         {
-            return base.ToString()+ $"{Speciality} {Group} {Rating} {Attendance}";
+            // CSV - Comma Separated Values = значение разделеные запятыми 
+            return base.ToString()+ ",\t" + $"{Speciality}, {Group}, {Rating}, {Attendance}";
         }
         public override void Print()
         {

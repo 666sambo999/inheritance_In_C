@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheretans", "Inheretans\Inheretans.csproj", "{AE367BD9-3C34-4C5E-B318-C563F9BD138E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy", "Inheretans\Academy.csproj", "{AE367BD9-3C34-4C5E-B318-C563F9BD138E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File", "File\File.csproj", "{9FFAF08C-66C1-4D68-BFF7-75EBEE660E6D}"
 EndProject

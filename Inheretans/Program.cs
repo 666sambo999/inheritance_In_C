@@ -1,8 +1,10 @@
-﻿using System;
+﻿// Наследование 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Inheretans
 {
@@ -39,15 +41,20 @@ namespace Inheretans
                 new Graduate("Puchkin", "Alex", 23, "Criminalist", "WW20", 70, 99, " how much is the fish"),
                 tommi,diaz,billy
             };
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string filename = "group.txt";
+            StreamWriter streamWriter = new StreamWriter(filename);
             for (int i =0; i<group.Length;i++)
             {
-                //Console.WriteLine(group[i]);
-                group[i].Print();
+                Console.WriteLine(group[i]);
+                streamWriter.WriteLine(group[i]);
+                //group[i].Print();
                 Console.WriteLine(delimiter);
             }
-
-
-
+            streamWriter.Close();
+            string cmd = currentDirectory + "\\" + filename;
+            System.Diagnostics.Process.Start("group.txt", cmd);
+            streamWriter.Close();
         }
     }
 }

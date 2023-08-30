@@ -20,7 +20,7 @@ namespace Inheretans
         }
         public override string ToString()
         {
-            return base.ToString() + $" {Speciality} {Experience} лет. ";
+            return base.ToString() +",\t\t" + $" {Speciality}, {Experience} лет. ";
         }
         public override void Print()
         {

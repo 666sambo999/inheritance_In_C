@@ -28,7 +28,7 @@ namespace File
             string cmd = currentDirectory + "\\" + filename;
             Console.WriteLine(cmd);
             System.Diagnostics.Process.Start("notepad", cmd); 
-
+            sw.Close();
 #endif
 
 
@@ -43,7 +43,7 @@ namespace File
                 string buffer = sr.ReadLine();
                 Console.WriteLine(i + " " + buffer);
             }
-
+            sr.Close(); // потоки нужно закрывать 
 
 #endif
 

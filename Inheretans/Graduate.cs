@@ -18,9 +18,10 @@ namespace Inheretans
         }
         public override string ToString()
         {
-            return base.ToString() + " " + Subject;
+            return base.ToString()+"," + " " + Subject;
         }
-        public sealed override void Print()
+        //public sealed override void Print() // sealed - на вывод специалиста 
+        public override void Print() // sealed - на вывод специалиста 
         {
             base.Print();
             Console.WriteLine("Subject:\t"+ Subject);
