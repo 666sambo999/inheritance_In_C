@@ -53,7 +53,7 @@ namespace AbstractGeometry
             Pen pen = new Pen(Color, LineWht); // гаечный ключ - это свойства(properties)
             e.Graphics.DrawRectangle(pen, StartX, StartY, (int)SideA, (int)SideB);
         }
-        public override void info(PaintEventArgs e)
+        public override void Info(PaintEventArgs e)
         {
             Console.WriteLine(this.GetType());
             if (this.GetType() == typeof(AbstractGeometry.Regtangle)) 
@@ -65,7 +65,7 @@ namespace AbstractGeometry
             {
                 Console.WriteLine($" длина строны: {side_b}");
             }
-            base.info(e);
+            base.Info(e);
         }
     }
 }

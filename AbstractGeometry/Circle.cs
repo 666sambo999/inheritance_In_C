@@ -45,10 +45,10 @@ namespace AbstractGeometry
             System.Drawing.Pen pen = new System.Drawing.Pen(Color, LineWht);
             e.Graphics.DrawEllipse(pen, StartX, StartY, (float)GetDiametr(), (float)GetDiametr());
         }
-        public override void info(PaintEventArgs e)
+        public override void Info(PaintEventArgs e)
         {
             Console.WriteLine( this.GetType());
-            base.info(e);
+            base.Info(e);
             Console.WriteLine($"Радиус круга: {Radius}");
         }
     }

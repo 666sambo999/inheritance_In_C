@@ -58,7 +58,7 @@ namespace AbstractGeometry // базовый класс
         public abstract double GetPerimetr();
         public abstract void Draw(PaintEventArgs e);
 
-        public virtual void info(PaintEventArgs e) // метод 
+        public virtual void Info(PaintEventArgs e) // метод 
         {
             Console.WriteLine($" Площадь фигуры: {this.GetArea()}");
             Console.WriteLine($" периметр фигуры: {this.GetPerimetr()}");
