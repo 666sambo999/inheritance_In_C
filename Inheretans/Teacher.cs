@@ -18,6 +18,12 @@ namespace Academy
             Speciality = speciality;
             Experience = experience;
         }
+        public override void Init(string[] values)
+        {
+            base.Init(values);
+            Speciality = values[4].TrimStart().TrimEnd(); ;
+            Experience = Convert.ToInt32(values[5].Split(' ')[1]);
+        }
         public override string ToString()
         {
             return base.ToString() +",\t\t" + $" {Speciality}, {Experience} лет. ";

@@ -22,6 +22,14 @@ namespace Academy
             Rating = rating;
             Attendance = attendance;
         }
+        public override void Init(string[] values)
+        {
+            base.Init(values);
+            Speciality = values[4].TrimStart().TrimEnd();
+            Group = values[5].TrimStart().TrimEnd();
+            Rating = Convert.ToDouble(values[6]);
+            Attendance = Convert.ToDouble(values[7]);
+        }
         public override string ToString()
         {
             // CSV - Comma Separated Values = значение разделеные запятыми 

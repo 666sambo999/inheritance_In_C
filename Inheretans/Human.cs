@@ -8,14 +8,20 @@ namespace Academy
 {
     internal class Human
     {
-        string LastName { get; set; }
-        string FirstName { get; set; }
-        int Age { set; get; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+        public int Age { set; get; }
         public Human(string lastname, string firstname, int age)
         {
             LastName = lastname;
             FirstName = firstname;
             Age = age;
+        }
+        public virtual void Init (string[] values)
+        {
+            LastName = values[1].TrimStart().TrimEnd();
+            FirstName = values[2].TrimStart().TrimEnd();
+            Age = Convert.ToInt32(values[3].Split(' ')[1]);
         }
         public override string ToString()
         {

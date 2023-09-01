@@ -16,6 +16,12 @@ namespace Academy
         {
             Subject = subject;
         }
+
+        public override void Init(string[] values)
+        {
+            base.Init(values);
+            Subject = values[8].TrimStart().TrimEnd();
+        }
         public override string ToString()
         {
             return base.ToString()+"," + " " + Subject;
